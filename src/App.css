@@ -1,0 +1,100 @@
+:root {
+    --mainBlue: #2a2a72;
+    --lightBlue: #009ffd;
+    --mainWhie: #f3f3f3;
+    --mainDark: #232528;
+    --mainYellow: #ffa400;
+}
+
+body {
+    font-family: "Oswald", sans-serif !important;
+    background: var(--mainWhie) !important;
+    color: var(--mainDark);
+}
+
+.text-title {
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.text-blue {
+    color: var(--mainBlue);
+}
+
+.text-Bright {
+    color: var(--lightBlue);
+}
+
+.btnCustom {
+    text-transform: capitalize;
+}
+
+.navbar {
+    background-color: var(--mainBlue);
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    text-transform: capitalize;
+    color: var(--mainWhie);
+    font-size: 1.4rem;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.cart-btn {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: var(--lightBlue);
+    padding: 2px 12px 2px 9px;
+    border: 1px solid var(--lightBlue);
+    border-radius: 7px 0 0 0;
+    transform: translate(100%, 0%);
+    transition: transform 1s;
+    color: var(--mainWhie);
+}
+
+.card-img-top {
+    transition: transform 1s;
+}
+
+.img-container:hover .card-img-top {
+    transform: scale(1.3);
+}
+
+.img-container:hover .cart-btn {
+    transform: scale(1);
+}
+
+.cart-btn:hover {
+    color: var(--mainBlue);
+}
+
+
+/* Modal */
+
+.inner-modal {
+    background-color: white;
+}
+
+.outer-modal {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-outline-dark:hover {
+    background: transparent !important;
+    color: black !important;
+}
